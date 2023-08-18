@@ -1,0 +1,92 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    text-align: center;
+    background-color: rgb(185, 162, 133);
+    padding: 15px;
+}
+
+a {
+    padding-inline: 20px;
+    font-size: 17px;
+}
+
+h1 {
+    text-align: center;
+    background-color: antiquewhite;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+
+.map {
+    flex-grow: 1;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+td {
+    border: 1.5px solid rgb(218, 198, 174);
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    width: fit-content;
+}
+
+.places {
+    text-align: center;
+    margin-inline: auto;
+}
+
+.places p {
+    padding: 5px;
+    border: 1px solid rgb(146, 125, 97);
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-inline: auto;
+
+    width: fit-content;
+    color: rgb(146, 125, 97);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+table button {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: rgb(218, 198, 174);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+table button:hover {
+    background-color: antiquewhite;
+}
+
+.places img{
+    cursor: pointer;
+    padding-bottom: 10px;
+}

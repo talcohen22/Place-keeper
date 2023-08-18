@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/user-style.css">
+    <title>User Settings</title>
+</head>
+<body>
+
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./user-prefs.html">User Settings</a>
+        <a href="./map.html">Places</a>
+    </nav>
+    
+    <h1>User Settings</h1>
+    
+    <form class="user-form" action="" onsubmit="onUpdateUser(event)">
+
+        <label class="email-label" for="email">E-Mail: </label>
+        <input required type="email" name="" id="email">
+
+        <label class="age-label" for="age">Age: </label>
+        <div class="age-input">
+            <input required type="range" min="18" max="120" value="30" name="" id="age" oninput="OnShowAge(this.value)">
+            <span class="curr-age">30</span>
+        </div>
+        
+        <label class="bgr-color-label" for="bgr-color">Set Background Color: </label>
+        <input required type="color" name="" id="bgr-color">
+
+        <label class="txt-color-label" for="txt-color">Set Text Color: </label>
+        <input required type="color" name="" id="txt-color">
+
+        <label class="birth-date-label" for="birth-date">Birth Date: </label>
+        <input required type="date" name="" id="birth-date">
+
+        <label class="birth-time-label" for="birth-time">Birth Time: </label>
+        <input required type="time" name="" id="birth-time">
+
+        <button class="submit-btn">Set</button>
+
+    </form>
+
+
+    <script src="js/utils.service.js"></script>
+    <script src="js/user.service.js"></script>
+    <script src="js/user.controller.js"></script>
+    
+</body>
+</html>

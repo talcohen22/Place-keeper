@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="map-css.css">
+    <title>Places</title>
+</head>
+
+<body onload="onInit()">
+
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./user-prefs.html">User Settings</a>
+        <a href="./map.html">Places</a>
+    </nav>
+
+    <h1>Places</h1>
+
+    <div class="container">
+        <div class="map"></div>
+
+        <div class="places">
+            <img onclick="onGetLocation()" src="./1.png" alt="">
+            
+            <table class="places-table"></table>
+
+            <p onclick="onDownloadCSV()">Download CSV</p>
+        </div>
+    </div>
+
+    
+    
+
+
+
+    <script src="js/utils.service.js"></script>
+    <script src="js/place.service.js"></script>
+    <script src="js/place.controller.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ircguwmtydrc34uAEFy1JyqP1swftUI&callback=initMap"></script>
+
+</body>
+
+</html>
+
+<!-- pan2 -->

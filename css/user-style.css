@@ -1,0 +1,87 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav{
+    text-align: center;
+    background-color: rgb(185, 162, 133);
+    padding: 15px;
+}
+
+a{
+    padding-inline: 20px;
+    font-size: 17px;
+}
+
+h1{
+    text-align: center;
+    background-color: antiquewhite;
+    margin-top: 0px;
+
+    padding: 30px;
+}
+
+.user-form {
+    display: grid;
+    grid-template-areas:
+        "  email-label        email"
+        "   age-label        age-input"
+        "bgr-color-label    bgr-color"
+        "txt-color-label    txt-color"
+        "birth-date-label   birth-date"
+        "birth-time-label   birth-time"
+        "  submit-btn       submit-btn";
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+
+    padding: 30px;
+    border: 3px solid antiquewhite;
+    border-radius: 10px;
+    margin: auto;
+
+    width: 60vw;
+    background-color: rgb(255, 249, 242);
+}
+
+.email-label {
+    grid-area: email-label;
+}
+
+.age-label {
+    grid-area: age-label;
+}
+
+.bgr-color-label {
+    grid-area: bgr-color-label;
+}
+
+.txt-color-label {
+    grid-area: txt-color-label;
+}
+
+.birth-date-label {
+    grid-area: birth-date-label;
+}
+
+.birth-time-label {
+    grid-area: birth-time-label;
+}
+
+.submit-btn{
+    grid-area: submit-btn;
+    justify-self: center;
+
+    cursor: pointer;
+    width: 10vw;
+    padding: 7px;
+    margin-block-start: 20px;
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid rgb(213, 203, 190)  ;
+}
+
+.user-form > label{
+    justify-self: end;
+    margin-inline-end: 10px;
+}
